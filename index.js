@@ -37,3 +37,6 @@ console.log(listarPessoas);
 listarPessoas.forEach(item => {
     console.log(item.nome);
 });
+for (let p = 0; p < listarPessoas.length; p++) {
+    console.log(listarPessoas[p].nome);
+}
