@@ -1,6 +1,10 @@
 "use strict";
+<<<<<<< HEAD
 var produtos = [];
 let cores = ["amarelo", "azul", "vermelho", "rosa"];
+=======
+let cores = ["amarelo", "azul", "vermelho"];
+>>>>>>> master
 let corSelect = document.getElementById("cor");
 cores.forEach(cor => {
     let option = document.createElement('option');
@@ -8,14 +12,22 @@ cores.forEach(cor => {
     option.value = cor;
     corSelect.appendChild(option);
 });
+<<<<<<< HEAD
 let tamanhos = ["P", "M", "G", "GG"];
 let tamanhoSelect = document.getElementById("tamanho");
 tamanhos.forEach(tamanho => {
     let option = document.createElement("option");
+=======
+let tamanhos = ["P", "M", "G"];
+let tamanhoSelect = document.getElementById("tamanho");
+tamanhos.forEach(tamanho => {
+    let option = document.createElement('option');
+>>>>>>> master
     option.text = tamanho;
     option.value = tamanho;
     tamanhoSelect.appendChild(option);
 });
+<<<<<<< HEAD
 function load() {
     const produtosFromStorage = localStorage.getItem('produtos');
     if (produtosFromStorage)
@@ -92,3 +104,5 @@ function save() {
     localStorage.setItem('produtos', JSON.stringify(produtos));
     load();
 }
+=======
+>>>>>>> master

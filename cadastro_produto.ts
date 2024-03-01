@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 // criando variavel global, lista de objetos produtos 
 var produtos :{id:string, nome:string, cor:string, tamanho:string, preco:string} [] = []
 
 //preenchendo as opções de cores no HTML
 let cores = ["amarelo","azul", "vermelho", "rosa"]
+=======
+//preenchendo as opções de cores no HTML
+let cores = ["amarelo","azul", "vermelho"]
+>>>>>>> master
 let corSelect = document.getElementById("cor") as HTMLSelectElement
 
 cores.forEach(cor => {
@@ -13,14 +18,23 @@ cores.forEach(cor => {
 })
 
 //preenchendo as opções de tamanho no HTML
+<<<<<<< HEAD
 let tamanhos = ["P","M","G","GG"]
 let tamanhoSelect = document.getElementById("tamanho") as HTMLSelectElement
 tamanhos.forEach(tamanho => {
     let option = document.createElement("option");
+=======
+let tamanhos = ["P","M","G"]
+let tamanhoSelect = document.getElementById("tamanho") as HTMLSelectElement
+
+tamanhos.forEach(tamanho => {
+    let option = document.createElement('option');
+>>>>>>> master
     option.text = tamanho;
     option.value = tamanho;
     tamanhoSelect.appendChild(option)
 })
+<<<<<<< HEAD
 // Função LOAD
 function load(){
     //ler o local do storage
@@ -128,3 +142,7 @@ function save(){
     localStorage.setItem('produtos', JSON.stringify(produtos))
     load()
 }
+=======
+
+
+>>>>>>> master
